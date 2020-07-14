@@ -1,19 +1,19 @@
 import React from 'react';
-import Auth from './components/Auth/Auth'
-import Form from './components/Form/Form'
-import Post from './components/Post/Post'
-import Dashboard from './components/Dashboard/Dashboard'
+import Routes from './routes'
 import Nav from './components/Nav/Nav'
 import './App.css';
 
-function App() {
+
+function App(props) {
   return (
     <div className="App">
-      <Auth/>
-      <Dashboard/>
-      <Form/>
+      {/* <Routes render={props => (
+        <Nav {...props}
+        url={this.props.location.path}
+        />
+      )} /> */}
+      <Routes/>
       <Nav/>
-      <Post/>
     </div>
   );
 }
